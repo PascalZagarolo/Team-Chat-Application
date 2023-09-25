@@ -4,6 +4,7 @@ import Image from "next/image";
 import UserAvatar from "../user-avatar";
 import { SocketIndicator } from "../socket-indicator";
 import { ChatVideoButton } from "./chat-video-button";
+import { ChatAudioButton } from "./chat-audio-button";
 
 interface ChatHeaderProps {
     serverId : string;
@@ -32,7 +33,10 @@ const ChatHeader: React.FC<ChatHeaderProps> = ({
         </p>
         <div className="ml-auto flex items-center">
             {type === "conversation" && (
+                <>
+                <ChatAudioButton />
                 <ChatVideoButton />
+                </>
             )}
             <SocketIndicator />
             </div> 

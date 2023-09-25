@@ -15,6 +15,7 @@ interface MemberIdPageProps {
         memberId : string;
     }, searchParams : {
         video? : boolean;
+        audio? : boolean;
     }
 }
 
@@ -67,8 +68,15 @@ const MemberIdPage: React.FC<MemberIdPageProps> = async ({
                 audio={true}
                 video={true}/>
             )}
+
+            {searchParams.audio && (
+                <MediaRoom 
+                chatId={conversation.id}
+                audio={true}
+                video={false}/>
+                )}
             
-            {!searchParams.video && (
+            {!searchParams.video && !searchParams.audio && (
                 <>
                     <ChatMessages 
                     member = { currentMember }

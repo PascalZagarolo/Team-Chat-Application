@@ -34,8 +34,8 @@ const MediaRoom: React.FC<MediaRoomProps> = ({
                 const data = await response.json();
                 setToken(data.token);
                 
-            } catch(e){
-                console.log(e);
+            } catch(error){
+                console.log(error);
             }
         })()
 
