@@ -47,7 +47,7 @@ interface ChannelIdPageProps {
           name={channel.name}
           serverId={channel?.serverId}
           type="channel"
-          otherMemberProfileId={""}
+          
           />
             
 

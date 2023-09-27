@@ -17,7 +17,7 @@ interface ChatHeaderProps {
     name : string; 
     type : "channel" | "conversation"
     imageUrl? : string;
-    receiverId : string;
+    
 }
 
 
@@ -27,7 +27,7 @@ const ChatHeader: React.FC<ChatHeaderProps> = ({
     name,
     type,
     imageUrl,
-    receiverId
+   
 }) => {
 
     
