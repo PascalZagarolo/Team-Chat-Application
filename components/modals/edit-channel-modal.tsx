@@ -150,7 +150,7 @@ const EditChannelModal = () => {
                                                     </SelectTrigger>
                                                 </FormControl>
                                                 <SelectContent>
-                                                {Object.values(Channeltype).map((type) =>(
+                                                {Object.values(ChannelType).map((type) =>(
                                                         <SelectItem key={type} value={type} className="capitalize">
                                                              {type.toLowerCase()}
                                                              <div className="ml-auto"> 

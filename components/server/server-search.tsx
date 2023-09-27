@@ -1,6 +1,6 @@
 "use client";
 
-import { Channeltype, Member, MemberRole } from '@prisma/client';
+import { ChannelType, Member, MemberRole } from '@prisma/client';
 import { CameraIcon, Mic, Pen, Search, Shield, ShieldCheck, User2 } from "lucide-react";
 import { useEffect, useState } from 'react';
 import { CommandDialog, CommandGroup, CommandInput, CommandItem, CommandList } from '../ui/command';

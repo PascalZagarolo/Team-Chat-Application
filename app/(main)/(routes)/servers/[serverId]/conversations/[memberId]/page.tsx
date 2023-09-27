@@ -54,12 +54,16 @@ const MemberIdPage: React.FC<MemberIdPageProps> = async ({
     const { memberOne, memberTwo } = conversation;
 
     const otherMember = memberOne.id !== currentMember.id ? memberOne : memberTwo;
+
+    const receiverId = otherMember.profileId;
+    
     return ( 
         <div className="bg-white dark:bg-[#19191a] flex flex-col h-full">
             <ChatHeader
             imageUrl={otherMember.profile.imageUrl}
             name={otherMember.profile.name}
             serverId = {params.serverId}
+            receiverId = {receiverId}
             type="conversation" />
 
             {searchParams.video && (

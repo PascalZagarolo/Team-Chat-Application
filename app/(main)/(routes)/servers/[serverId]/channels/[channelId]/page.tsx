@@ -44,9 +44,11 @@ interface ChannelIdPageProps {
     return (
         <div className="bg-white dark:bg-[#171717] flex flex-col h-full">
             <ChatHeader 
-            name={channel.name}
-            serverId={channel?.serverId}
-            type="channel"/>
+          name={channel.name}
+          serverId={channel?.serverId}
+          type="channel"
+          otherMemberProfileId={""}
+          />
             
 
             {channel.type === ChannelType.TEXT && (

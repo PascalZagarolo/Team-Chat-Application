@@ -15,6 +15,7 @@ interface ServerMemberProps {
 
 const roleIconMap = {
     [MemberRole.GUEST]: <User2 className="h-4 w-4" />,
+    [MemberRole.PREMIUM]: <ShieldCheck className="h-4 w-4 ml-2 text-yellow-600" />,
     [MemberRole.MODERATOR]: <ShieldCheck className="h-4 w-4 ml-2 text-indigo-500" />,
     [MemberRole.ADMIN]: <Shield className="h-4 w-4 text-rose-500 ml-2 font-bold" />
 }
@@ -42,7 +43,7 @@ const ServerMember : React.FC<ServerMemberProps> = ({
             className='h-8 w-8 md:h-8 md:w-8'/>
             <p className={
                 cn("font-semibold text-sm text-zinc-400 group-hover:text-zinc-600 dark:text-zinc-300 dark:group-hover:text-zinc-300 transition",
-                params.memberId = member.id && "text-primary dark:text-zinc-300/90 dark:group-hover:text-white")
+                params!.memberId = member.id && "text-primary dark:text-zinc-300/90 dark:group-hover:text-white")
             }>
                 {member.profile.name}
             </p>

@@ -1,3 +1,5 @@
+import FriendSideBar from "@/components/friendbar/friend-sidebar";
+import FriendList from "@/components/modals/friend-list-modal";
 import ServerSidebar from "@/components/server/server-sidebar";
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
@@ -35,6 +37,7 @@ const ServerLayout = async ({ children, params }: {children: React.ReactNode, pa
             <main className="h-full md:pl-60">
             {children}
             </main> 
+            
         
         </div>
         );

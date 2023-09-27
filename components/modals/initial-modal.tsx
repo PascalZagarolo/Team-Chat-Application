@@ -25,7 +25,6 @@ import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import FileUpload from "../file-upload";
-import { error } from 'console';
 import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
