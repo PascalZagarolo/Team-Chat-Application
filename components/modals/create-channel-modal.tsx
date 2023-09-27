@@ -32,6 +32,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { AlignLeft, Mic, Video } from "lucide-react";
 
 
+
 const formSchema = z.object({
     name: z.string().min(1, {
         message: "Kanalname muss mindestens 1 Zeichen lang sein"
