@@ -63,7 +63,7 @@ const MemberIdPage: React.FC<MemberIdPageProps> = async ({
             imageUrl={otherMember.profile.imageUrl}
             name={otherMember.profile.name}
             serverId = {params.serverId}
-            receiverId = {receiverId}
+            
             type="conversation" />
 
             {searchParams.video && (
