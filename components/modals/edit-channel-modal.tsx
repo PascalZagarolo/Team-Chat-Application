@@ -35,7 +35,7 @@ import { AlignLeft, Mic, Video } from "lucide-react";
 const formSchema = z.object({
     name: z.string().min(1, {
         message: "Kanalname muss mindestens 1 Zeichen lang sein"
-    }).refine(
+    }).max(20, { message : "Kanalname zu lang"}).refine(
         name => name !== "general",{
             message: "Der Name >'general'< ist reserviert",
         }
